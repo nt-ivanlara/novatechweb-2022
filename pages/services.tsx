@@ -3,6 +3,7 @@ import Head from "next/head";
 import { apolloCon as Apollo } from "@/lib/apollo";
 import { GET_SERVICE_LANDING } from "@/queries/services";
 import ServiceLanding from "../src/landings/ServiceLanding";
+import { SERVICE_DATA } from "src/mock-data/services-data";
 
 const Services: NextPage = ({ data }: any) => {
     return (
@@ -20,12 +21,12 @@ const Services: NextPage = ({ data }: any) => {
 export default Services;
 
 export async function getServerSideProps() {
-    const { loading, error, data } = await Apollo.query({
-        query: GET_SERVICE_LANDING,
-        variables: { label: "service-landing" },
-    });
+    // const { loading, error, data } = await Apollo.query({
+    //     query: GET_SERVICE_LANDING,
+    //     variables: { label: "service-landing" },
+    // });
 
     return {
-        props: { data: data.landings.data[0] },
+        props: { data: SERVICE_DATA },
     };
 }

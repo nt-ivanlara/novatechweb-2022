@@ -36,6 +36,10 @@ const InfoCard = ({
         `${process.env.NEXT_CMS_URI}${formats?.thumbnail?.url}`
     );
 
+    console.log('hrRef', hrRef.current)
+    console.log('NEXT_CMS_URI', process.env.NEXT_CMS_URI)
+    console.log('thumbnail', formats?.thumbnail?.url)
+
     return (
         <div
             className={`w-full rounded-2xl flex items-center ${infoCardStyle} flex-col ${cardStyles} py-4 md:py-7 px-4`}

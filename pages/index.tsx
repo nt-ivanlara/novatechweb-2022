@@ -3,6 +3,7 @@ import Head from "next/head";
 import { apolloCon as Apollo } from "@/lib/apollo";
 import { GET_HOME_LANDING } from "@/queries/home";
 import { HomeLanding } from "../src/landings/HomeLanding";
+import { HOME_DATA } from "src/mock-data/home-data";
 
 const Home: NextPage = ({ data }: any) => {
     return (
@@ -20,12 +21,12 @@ const Home: NextPage = ({ data }: any) => {
 export default Home;
 
 export async function getServerSideProps() {
-    const { loading, error, data } = await Apollo.query({
-        query: GET_HOME_LANDING,
-        variables: { label: "home-landing" },
-    });
+    // const { loading, error, data } = await Apollo.query({
+    //     query: GET_HOME_LANDING,
+    //     variables: { label: "home-landing" },
+    // });
 
     return {
-        props: { data: data.landings.data[0] },
+        props: { data: HOME_DATA },
     };
 }
