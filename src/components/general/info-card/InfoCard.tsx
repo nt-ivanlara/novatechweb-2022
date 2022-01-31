@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import clsx from "clsx";
 import { GenericBg } from "../../../interfaces/style-generics";
 import { InfoCardProps } from "./interfaces";
 import useInfoCard from "@/hooks/useInfoCard";
@@ -18,7 +17,6 @@ const InfoCard = ({
     icon,
     isTransparent,
     isUppercaseTitle,
-    bgColor,
     isHovered = false,
     titleColor = "text-white",
 }: InfoCardProps) => {

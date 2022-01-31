@@ -28,7 +28,7 @@ const ServiceLanding = ({ data }: Props) => {
         <section>
             <Banner {...serviceAttrs} />
 
-            <CircleTabs tabs={tabsAttrs} />
+            {/* <CircleTabs tabs={tabsAttrs} /> */}
 
             <ServiceTabs {...infoCardsAttrs} />
 
