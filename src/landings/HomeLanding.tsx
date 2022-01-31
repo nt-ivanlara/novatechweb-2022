@@ -34,10 +34,8 @@ export const HomeLanding = ({ data }: GenericProps) => {
 
     return (
         <section>
-            {/* Main banner */}
             <Banner {...bannerAttrs} styles="p-14" />
 
-            {/* Nearshore Software Dev */}
             <NearshoreBox
                 image={`${process.env.NEXT_CMS_URI}}$/uploads/bg_map_eef5879bfd.png`}
                 {...infoCardsAttrs}
@@ -45,10 +43,8 @@ export const HomeLanding = ({ data }: GenericProps) => {
                 isHovered
             />
 
-            {/* Services */}
             <InfoCardsBox {...serviceCardsAttrs} />
 
-            {/* Careers banner */}
             <BannerWtHero
                 {...serviceAttrs}
                 styles="py-12 pt-12 px-12 md:py-80 md:pt-20 md:px-72"
@@ -56,22 +52,17 @@ export const HomeLanding = ({ data }: GenericProps) => {
                 titleFirst
             />
 
-            {/* Our work banner */}
             <OurWorkBanner {...ourWorkAttrs} styles="py-0" heroFirst />
 
-            {/* Customers carousel */}
             <Customers {...customerAttrs} />
 
-            {/* Simple banner */}
             <TextBanner
                 title="Innovation and Tech"
                 subtitle="The future is here with us"
             />
 
-            {/* Techs carousel */}
             <TechCarousel {...techsAttrs} />
 
-            {/* Contact banner */}
             <ContactBanner
                 title="Ready to transform your business?"
                 subtitle=""

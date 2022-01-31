@@ -85,6 +85,47 @@ export const GET_SERVICE_LANDING = gql`
                             }
                         }
                     }
+                    tech_carousel {
+                        data {
+                            attributes {
+                                title
+                                teches(pagination: { limit: 30 }) {
+                                    data {
+                                        attributes {
+                                            name
+                                            logo {
+                                                data {
+                                                    attributes {
+                                                        name
+                                                        formats
+                                                    }
+                                                }
+                                            }
+                                            Category
+                                            label
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tabs {
+                        data {
+                            attributes {
+                                title
+                                icon {
+                                    data {
+                                        attributes {
+                                            name
+                                            formats
+                                        }
+                                    }
+                                }
+                                label
+                                content
+                            }
+                        }
+                    }
                 }
             }
         }

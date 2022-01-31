@@ -5,8 +5,9 @@ export interface SwiperSettingsProps {
     loop: boolean;
     loopFillGroupWithBlank: boolean;
     navigation: boolean;
-    pagination: SwiperPaginationProps;
+    pagination?: SwiperPaginationProps;
     autoplay?: SwiperAutoplayProps;
+    effect?: "fade" | "slide" | "cube" | "coverflow" | "flip" | "creative" | "cards" | undefined;
 }
 
 export interface SwiperPaginationProps {

@@ -14,13 +14,10 @@ const AboutUsLanding = ({ data }: GenericProps) => {
 
     return (
         <section>
-            {/* Main banner */}
             <SimpleBanner {...bannerAttrs} />
 
-            {/* About us banner */}
             <AboutUsBanner {...briefAttrs} />
 
-            {/* Mission and vision */}
             <MissionVission {...mAvfAttrs} />
 
             <Flags />

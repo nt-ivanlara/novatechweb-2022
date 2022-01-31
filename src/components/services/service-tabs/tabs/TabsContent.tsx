@@ -10,8 +10,6 @@ import { ServiceTabsBox } from "../styles";
 const TabsContent = ({ info_cards }: InfoCardTabsContentProps) => {
     const { data } = info_cards;
 
-    console.log("data", data);
-
     return (
         <>
             {data.map(
@@ -41,6 +39,7 @@ const TabsContent = ({ info_cards }: InfoCardTabsContentProps) => {
                     return (
                         <div
                             key={index}
+                            id={`id-${title}`}
                             className="grid gap-0 grid-cols-2 w-full"
                         >
                             <div

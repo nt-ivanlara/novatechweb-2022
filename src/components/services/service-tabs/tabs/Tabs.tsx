@@ -1,8 +1,6 @@
 import { useRef } from "react";
-import styled from "styled-components";
 import { InfoCardBoxTabsProps } from "@/interfaces/info-card";
 import { GenericAttrs } from "@/interfaces/generic";
-import { GenericBgImageProps } from "@/interfaces/style-generics";
 import { InfoCardProps } from "src/components/general/info-card/interfaces";
 import InfoCard from "src/components/general/info-card/InfoCard";
 import { ServiceTabsBox } from "../styles";
@@ -26,7 +24,7 @@ const Tabs = ({
     return (
         <div className="grid gap-0 grid-cols-2 w-full">
             <div className="flex items-center justify-center flex-col bg-nt-bg-blue p-14">
-                <h1 className="font-istok font-bold text-2xl text-center text-nt-orange mb-9">
+                <h1 className="font-istok font-bold text-2xl text-center text-nt-orange mb-9 uppercase tracking-wider">
                     {title}
                 </h1>
                 <p className="font-raleway font-medium text-xl text-center text-white mb-9">
@@ -42,17 +40,18 @@ const Tabs = ({
                                 isTransparent,
                             },
                         }: GenericAttrs<InfoCardProps>) => (
-                            <InfoCard
-                                key={title}
-                                {...{
-                                    title,
-                                    subtitle: "",
-                                    icon,
-                                    isTransparent,
-                                }}
-                                isHovered={true}
-                                isUppercaseTitle={isUppercaseTitle}
-                            />
+                            <a key={title} href={`#id-${title}`}>
+                                <InfoCard
+                                    {...{
+                                        title,
+                                        subtitle: "",
+                                        icon,
+                                        isTransparent,
+                                    }}
+                                    isHovered={true}
+                                    isUppercaseTitle={isUppercaseTitle}
+                                />
+                            </a>
                         )
                     )}
                 </div>

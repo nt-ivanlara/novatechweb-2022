@@ -12,16 +12,12 @@ const NearshoreLanding = ({ data }: GenericProps) => {
 
     return (
         <section>
-            {/* Main banner */}
             <SimpleBanner {...nearshoreAttrs} />
 
-            {/* Maps */}
             <Maps {...mapAttrs} />
 
-            {/* The problem carousel */}
             <TheProblemCarousel />
 
-            {/* Nearshore software development */}
             <Accordion {...infoCardsAttrs} />
         </section>
     );

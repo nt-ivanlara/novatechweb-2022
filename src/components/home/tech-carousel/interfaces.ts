@@ -3,3 +3,10 @@ export interface TechCarouselProps {
     teches: any;
     cols?: number;
 }
+
+export interface Teches {
+    label: string;
+    logo: any;
+    name: string;
+    Category: string;
+}
