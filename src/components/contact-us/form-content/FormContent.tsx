@@ -17,7 +17,6 @@ const FormContent = ({ actionLabel, fields }: Props) => {
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const json = toLowerJsonProps(JSON.stringify(state));
-        console.log(json);
     };
 
     const handleChange = (e: React.ChangeEvent<any>) =>

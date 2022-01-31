@@ -1,5 +1,15 @@
 {
   "/_app": "pages/_app.js",
+  "/about-us": "pages/about-us.js",
+  "/api/hello": "pages/api/hello.js",
+  "/careers": "pages/careers.html",
+  "/contact": "pages/contact.js",
+  "/": "pages/index.js",
+  "/nearshore": "pages/nearshore.js",
+  "/news": "pages/news.html",
+  "/our-work": "pages/our-work.html",
+  "/services": "pages/services.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
 }

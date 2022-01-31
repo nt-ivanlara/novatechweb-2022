@@ -7,7 +7,7 @@ const ContactForm = () => {
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const json = toLowerJsonProps(JSON.stringify(state));
-        console.log(json);
+        console.log('ContactForm', json);
     };
     return (
         <div className="w-full flex items-start justify-center flex-col px-36 py-14">

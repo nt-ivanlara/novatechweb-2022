@@ -21,13 +21,9 @@ const useHome = ({ attributes }: { attributes: any }) => {
     const ourWorkAttrs: BannerProps = banners.data.filter(
         (a: any) => a.attributes.label === "our-work-banner"
     )[0].attributes;
-
     const techsAttrs: TechCarouselProps = tech_carousel.data.attributes;
     const customerAttrs: CustomerCarouselProps =
         customer_carousels.data[0].attributes;
-    // console.log('------------------------------------------------------------------------')
-    // console.log("data", data);
-    // console.log('------------------------------------------------------------------------')
     const infoCardsAttrs: InfoCardBoxProps = info_card_boxes.data.filter(
         (a: any) => a.attributes.label === "nearshore-box"
     )[0].attributes;

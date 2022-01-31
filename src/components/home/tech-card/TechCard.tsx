@@ -3,7 +3,6 @@ import Image from "next/image";
 import { TechCardProps } from "./interfaces";
 
 const TechCard = ({ label, name, logo }: TechCardProps) => {
-    // console.log(logo);
     const { formats } = logo?.data?.attributes;
     const hrRef = useRef(
         `${process.env.NEXT_CMS_URI}${formats?.thumbnail?.url}`

@@ -35,7 +35,6 @@ const MissionVission = ({
     visionIcon,
     background,
 }: MissionAndVisionBannerProps) => {
-    console.log({ missionIcon, visionIcon });
     const { formats: bgFormats } = background?.data?.attributes ?? {};
 
     const bgUri = useRef(
